@@ -124,15 +124,15 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-Rapper | buildspace </title>
+        <title>KASH-Storyteller | buildspace </title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>🤖Botty Bops🦾</h1>
+            <h1>🤖StoryTeller🦾</h1>
           </div>
           <div className="header-subtitle">
-            <h2>What do you want🤖Botty to rap about?</h2>
+            <h2>What kind of story would you like🤖KASH to write about?</h2>
           </div>
         </div>
         <audio
@@ -143,7 +143,7 @@ const Home = () => {
         />
         <div className="prompt-container">
           <textarea
-            placeholder="start typing here"
+            placeholder="story here"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
@@ -170,7 +170,7 @@ const Home = () => {
                 {isGenerating ? (
                   <span className="loader"></span>
                 ) : (
-                  <p>Boppit</p>
+                  <p>CREATE</p>
                 )}
               </div>
             </a>
