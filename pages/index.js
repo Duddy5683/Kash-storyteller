@@ -135,7 +135,12 @@ const Home = () => {
             <h2>What kind of story would you like🤖KASH to write about?</h2>
           </div>
         </div>
-      
+        <audio
+          src={`/kash2.mp3`}
+          onCanPlay={(e) => e.target.volume = 0.2}
+
+          ref={(el) => { setAudio(el); }}
+        />
         <div className="prompt-container">
           <textarea
             placeholder="Write your story here"
