@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import kashLogo from '../assets/kash-logo.png';
+import buildspaceLogo from '../assets/Group 71.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -135,9 +135,6 @@ const Home = () => {
             <h2>Embark on a Journey through Enchanting Stories with K.A.S.H</h2>
           </div>
         </div>
-        <div classname="logo-container">
-          <Image src={kashlogo} alt="Your logo" />
-        </div>
         <audio
           src={`/kash2.mp3`}
           onCanPlay={(e) => e.target.volume = 0.2}
@@ -209,7 +206,7 @@ const Home = () => {
         <a
           href="https://www.buymeacoffee.com/guttermademedia" target="_blank" rel="noreferrer">
           <div className="badge">
-            <Image src={kashLogo} class="balls" alt="Your logo" />
+            <Image src={buildspaceLogo} alt="buildspace logo" />
             <p>Help me build this project</p>
           </div>
         </a>
