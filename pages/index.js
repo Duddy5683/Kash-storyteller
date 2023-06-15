@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/Group 71.png';
+import kashLogo from '../assets/kash-logo.png';
 import { useState } from 'react';
 
 const Home = () => {
