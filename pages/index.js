@@ -124,16 +124,19 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>KASH-Storyteller | buildspace </title>
+        <title>K-A-S-H | buildspace </title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>🤖StoryTeller🦾</h1>
+            <h1>K-A-S-H Adventures: Explore Magical Worlds and Exciting Tales</h1>
           </div>
           <div className="header-subtitle">
-            <h2>What kind of story would you like🤖KASH to write about?</h2>
+            <h2>Embark on a Journey through Enchanting Stories with K.A.S.H</h2>
           </div>
+        </div>
+        <div classname="logo-container">
+          <Image src={kashlogo} alt="Your logo" />
         </div>
         <audio
           src={`/kash2.mp3`}
@@ -143,7 +146,7 @@ const Home = () => {
         />
         <div className="prompt-container">
           <textarea
-            placeholder="Write your story here"
+            placeholder="Hello I am  K-A-S-H, What story shall we create"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
@@ -170,7 +173,7 @@ const Home = () => {
                 {isGenerating ? (
                   <span className="loader"></span>
                 ) : (
-                  <p>CREATE</p>
+                  <p>IMAGINE</p>
                 )}
               </div>
             </a>
@@ -204,12 +207,9 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://www.buymeacoffee.com/guttermademedia"
-          target="_blank"
-          rel="noreferrer"
-        >
+          href="https://www.buymeacoffee.com/guttermademedia" target="_blank" rel="noreferrer">
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
+            <Image src={kashLogo} class="balls" alt="Your logo" />
             <p>Help me build this project</p>
           </div>
         </a>
