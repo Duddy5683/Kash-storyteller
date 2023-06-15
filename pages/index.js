@@ -136,7 +136,7 @@ const Home = () => {
           </div>
         </div>
         <audio
-          src={`/beat3.mp3`}
+          src={`/kash2.mp3`}
           onCanPlay={(e) => e.target.volume = 0.2}
 
           ref={(el) => { setAudio(el); }}
